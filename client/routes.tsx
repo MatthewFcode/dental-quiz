@@ -6,12 +6,13 @@ import {
 import App from './components/App'
 import Home from './components/Home'
 import Quiz from './components/Quiz'
+import { dataset } from '../data/data'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route element={<App />}>
       <Route path="/" element={<Home />} />
-      <Route path="quiz" element={<Quiz />} />
+      <Route path="quiz" element={<Quiz dataset={dataset} />} />
     </Route>,
   ),
 )
