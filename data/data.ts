@@ -1,27 +1,37 @@
 export interface Data {
   images: string[]
-  question: string
-  answers: string[]
-  correctAnswer: string
-  left: boolean
+  answer: string
+}
+
+export interface QuizProps {
+  dataset: Data[]
+}
+
+export interface ScoreSummaryProps {
+  correct: number
+  incorrect: number
 }
 
 export const dataset: Data[] = [
-  {
-    images: [
-      'https://media.istockphoto.com/id/814423752/photo/eye-of-model-with-colorful-art-make-up-close-up.jpg?s=612x612&w=0&k=20&c=l15OdMWjgCKycMMShP8UK94ELVlEGvt7GmB_esHWPYE=',
-      'https://images.unsplash.com/photo-1526779259212-939e64788e3c?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZnJlZSUyMGltYWdlc3xlbnwwfHwwfHx8MA%3D%3D',
-    ],
-    question: 'Which city is shown?',
-    answers: ['Paris', 'Berlin', 'Rome', 'London'],
-    correctAnswer: 'Paris',
-    left: true,
-  },
-  {
-    images: ['img2a.jpg', 'img2b.jpg'],
-    question: 'Where is the Eiffel Tower?',
-    answers: ['Madrid', 'Paris', 'Vienna', 'Dublin'],
-    correctAnswer: 'Paris',
-    left: false,
-  },
+
+]
+
+const teeth: Data = [
+  {images: ['../'], number: 24, tooth: 'upper left pre molar'},
+  {images: [], number: 31, tooth: 'lower left first incisor'},
+  {images: [], number: 33, tooth: 'upper left first premolar' },
+  {images: [], number: 34, tooth: 'lower left first premolar' },
+  {images: [], number: 22, tooth: 'upper left second premolar' },
+  {images: [], number: 37, tooth: 'lower left second pre molar' },
+  {images: [], number: 14, tooth: 'upper right first premolar' },
+  {images: [], number: 14, tooth: 'upper right first premolar' },
+  {images: [], number: 16, tooth: 'upper right first molar' },
+  {images: [], number: 25, tooth: 'upper left second premolar' },
+  {images: [], number: 23, tooth: 'upper left canine' },
+  {images: [], number: 32 , tooth: 'lower left second central incisor' },
+  {images: [], number: 16, tooth: 'upper right first molar' },
+  {images: [], number: 26, tooth: 'upper left first molar' },
+  {images: [], number: 36, tooth: 'lower left first molar' },
+  {images: [], number: 15, tooth: 'upper right second premolar' },
+  {images: [], number 33, tooth: 'lower left canine' }
 ]
